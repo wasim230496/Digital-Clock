@@ -22,6 +22,8 @@
         .container{
             
             display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 600px;
             height: 400px;
             border: 1px solid rgb(11, 112, 16);
@@ -29,7 +31,6 @@
         }
         .heading{
             display: flex;
-            /* justify-content: center; */
             margin: auto;
             align-items: center;
             font-size: 100px;
@@ -37,7 +38,15 @@
             font-weight: 400;
             font-style: normal;
         }
+        .dots{
+            font-size: 50px;
+        }
         
+        .date{
+            
+            font-size: 35px;
+            font-weight: 600;
+        }
 
 
 
@@ -48,7 +57,9 @@
     <div class="container">
 
         <h1 class="heading"><span id="hour">12</span><span class="dots" id="dot1"> : </span><span id="minute">34</span><span class="dots" id="dot2">:</span><span id="seconds">25</span></h1>
-        
+
+        <p class="date">Date: <span id="date"></span>/<span id="month"></span>/<span id="year"></span></p>
+    
     </div>
     <script src="index.js"></script>
     
